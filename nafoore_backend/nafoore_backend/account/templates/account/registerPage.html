@@ -1,0 +1,13 @@
+{% load crispy_forms_tags %}
+<form method="post" action="">
+    <table>
+    {% csrf_token %}
+    {{ form.as_p }}
+        <tr>
+            <td></td>
+    <td><button type="submit">Register</button></td>
+        </tr>
+    </table>
+<p>Already a member? </p><a href="{% url 'loginpage'%}">LOGIN</a>
+
+</form>
